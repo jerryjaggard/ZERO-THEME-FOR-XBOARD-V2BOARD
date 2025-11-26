@@ -1,5 +1,5 @@
 {
-    "license": "eyJhcGkiOiAibmV0ZmxhcmVwcm8uY29tIn0=@TCxJnMEebn5BKRbfbjL1SYKlT+BKKBSiGwGsM8drBVThaocLYyZNS0ESQq/yvaK+sm+T+zhuOLSg4U+sbh4b+Uh7+J72EFnN1MyP8tozxjtR9W7jz/HbBhkv3tuoYu7/dqXre1mCSTevCTkSG4eppafZxKbfa4G23k3j6t19/dEJJC1CcTXFkCS7wI153fWoLKrLO4inAtAiU3aV7dfKaIxZfXhlP/SIvxVG2SJPJwFzHWWlF8jkf2VYkRmGh0NzEA/6Gr4dPyPKyFPvbz3EeFR3eCI30XLU4Q9RfWyHfL9hgQJ9GPii9L+OEtotlDH/tMmYnIKO6YFyFbgE153daw==",
+    "license": "YOUR_LICENSE_KEY_HERE",
     "api_base": "/api/v1",
     "land_page": true,
     "cf_site_key": "",
@@ -10,6 +10,8 @@
     "ticket_need_sub": false,
     "brand_name": "ZeroTheme Premium",
     "logo_img": "/logo.svg",
+    "crisp_website_id": "",
+    "facebook_pixel_id": "",
     "locales":[
         { "label": "English", "value": "en-US" },
         { "label": "简体中文", "value": "zh-CN" }

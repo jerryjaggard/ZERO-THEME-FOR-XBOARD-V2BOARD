@@ -54,31 +54,40 @@
     })();
   </script>
   
+  <!-- Crisp Chat Widget - Configure in config.json crisp_website_id -->
   <script type="text/javascript">
     window.$crisp = [];
-    window.CRISP_WEBSITE_ID = ""; // Replace with your Crisp Website ID
-    (function() {
-        var script = document.createElement("script");
-        script.src = "https://client.crisp.chat/l.js";
-        script.async = true;
-        document.body.appendChild(script);
-    })();
+    // Get Crisp ID from theme config or leave empty to disable
+    window.CRISP_WEBSITE_ID = window.ZEROTHEME_CONFIG?.crisp_website_id || "";
+    if (window.CRISP_WEBSITE_ID) {
+      (function() {
+          var script = document.createElement("script");
+          script.src = "https://client.crisp.chat/l.js";
+          script.async = true;
+          document.body.appendChild(script);
+      })();
+    }
   </script>
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1398509151170715');
-fbq('track', 'PageView');
-</script>
-<!-- End Meta Pixel Code -->
+  <!-- Facebook Pixel - Configure in config.json facebook_pixel_id -->
+  <script>
+  (function() {
+    // Get Facebook Pixel ID from theme config or leave empty to disable
+    var fbPixelId = window.ZEROTHEME_CONFIG?.facebook_pixel_id || "";
+    if (fbPixelId) {
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', fbPixelId);
+      fbq('track', 'PageView');
+    }
+  })();
+  </script>
 
   <style>
     /* Premium Loading Screen */
@@ -299,9 +308,7 @@ fbq('track', 'PageView');
     });
   </script>
   
-<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="a692c4d4-bd2c-4ab1-be3a-4071a545a766";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-
-
+<!-- Note: Duplicate Crisp integration removed - use config.json to configure -->
 
 <script>
 (function() {
