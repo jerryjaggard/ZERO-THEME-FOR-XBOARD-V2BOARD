@@ -36,6 +36,18 @@ The GitBook URL was blocked by network policy. Alternative sources used (see zer
 
 ## 2. EXECUTIVE SUMMARY
 
+### ⚠️ CRITICAL WARNINGS
+
+Before proceeding, be aware of these important requirements:
+
+1. **Manual Plan Sync Required**: The pricing displayed in config.json is STATIC. You MUST manually update it to match your XBoard v2_plan database entries.
+
+2. **Privacy Compliance**: The theme includes third-party tracking scripts (Crisp, Facebook Pixel). For GDPR/CCPA compliance, you MUST remove or replace these scripts in index.html.
+
+3. **ACME Challenge Exposure**: The theme ZIP contains an `.well-known/acme-challenge/` directory with certificate validation tokens. Remove this directory before deployment.
+
+4. **No Source Code**: The theme is pre-compiled. You cannot modify Vue components without obtaining source code from the theme author.
+
 ### 2.1 What is Zero Theme?
 
 Zero Theme is a modern, pre-compiled Vue.js single-page application (SPA) theme designed for XBoard/v2board VPN panel. It provides:
@@ -453,12 +465,19 @@ Zero Theme benefits from these XBoard hooks (analysis.md Section 8):
 
 ### 8.4 Third-Party Integrations
 
-| Service | Configuration | Purpose |
-|---------|---------------|---------|
-| Crisp | Window.CRISP_WEBSITE_ID in index.html | Live chat widget |
-| Facebook Pixel | Script in index.html | Analytics/ads tracking |
-| Cloudflare Turnstile | vue-turnstile component | Bot protection |
-| Telegram | telegram_modal in config.json | Support contact |
+⚠️ **PRIVACY WARNING**: The following third-party scripts are embedded in index.html and may collect user data. For GDPR/CCPA compliance, you should review and potentially remove these before deployment:
+
+| Service | Configuration | Purpose | Privacy Impact |
+|---------|---------------|---------|----------------|
+| Crisp | Window.CRISP_WEBSITE_ID in index.html | Live chat widget | Collects user data, cookies |
+| Facebook Pixel | Script in index.html | Analytics/ads tracking | **HIGH** - Tracks all page views |
+| Cloudflare Turnstile | vue-turnstile component | Bot protection | Low - security feature |
+| Telegram | telegram_modal in config.json | Support contact | None - static link |
+
+**Recommended Actions:**
+1. Remove or replace Facebook Pixel script with privacy-respecting analytics (e.g., Plausible, Umami)
+2. Add cookie consent banner if using Crisp
+3. Update privacy policy to disclose third-party data collection
 
 ---
 
@@ -495,7 +514,11 @@ To add a new language:
 1. Copy `en-US.json` to `{lang-code}.json`
 2. Translate all values
 3. Create gzipped version: `gzip -k {lang-code}.json`
-4. **NOT INFERABLE**: How the theme detects language (likely browser language or XBoard setting)
+
+**Language Detection**: The theme likely uses Vue i18n with browser language detection. To verify:
+- Inspect the main bundle (`index-af7f3697.js`) for i18n configuration
+- Look for `navigator.language` or `localStorage.getItem('locale')` patterns
+- Check if XBoard's `/api/v1/guest/comm/config` returns a `language` setting
 
 ---
 
@@ -516,7 +539,16 @@ To add a new language:
 1. **Token Security**: Ensure tokens are stored securely (httpOnly cookies preferred)
 2. **CSP Headers**: Configure Content-Security-Policy in nginx
 3. **HTTPS**: Enforce TLS for all connections
-4. **Third-party Scripts**: Review Crisp/Facebook scripts for privacy
+4. **Third-party Scripts**: Review and remove Crisp/Facebook scripts for privacy compliance
+5. **ACME Challenge Cleanup**: Remove `.well-known/acme-challenge/` directory before deployment - it contains certificate validation tokens that should not be exposed
+
+### 10.3 Files to Remove Before Deployment
+
+| File/Directory | Reason |
+|----------------|--------|
+| `.well-known/acme-challenge/` | Contains SSL certificate validation tokens |
+| Facebook Pixel script in index.html | Privacy concern (optional) |
+| Sample Crisp ID in index.html | Replace with your own or remove |
 
 ---
 
@@ -527,8 +559,9 @@ To add a new language:
 | Issue | Severity | Resolution |
 |-------|----------|------------|
 | Static pricing in config.json | HIGH | Must manually sync with v2_plan |
+| ACME challenge files exposed | MEDIUM | Remove `.well-known/acme-challenge/` directory |
 | Missing dashboard.blade.php | MEDIUM | Theme is SPA, not traditional Blade theme |
-| Hardcoded Crisp/FB scripts | LOW | Edit index.html to change/remove |
+| Hardcoded Crisp/FB scripts | MEDIUM | Edit index.html to remove for privacy compliance |
 | Sample coupon code | LOW | Create matching coupon in XBoard |
 
 ### 11.2 XBoard Compatibility
