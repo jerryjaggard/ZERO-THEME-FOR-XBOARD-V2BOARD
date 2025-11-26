@@ -1,17 +1,62 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en" data-theme="obsidian">
 
 <head>
   <meta charset="UTF-8" />
   <link rel="shortcut icon" type="image/svg+xml" href="/logo.svg">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <title>Netflare - Unlock Your Internet In China !</title>
-  <meta property="og:title" content="Netflare- China's Top Unblocker">
-  <meta property="og:description" content="全独家隧道技术、智能接入点分配、先进的流媒体解锁。获取与全球数百内容供应商互联的网络加速服务高达2000Mbps的单线接入能力。">
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=5" />
+  
+  <!-- SEO Meta Tags -->
+  <title>ZeroTheme Premium | Secure VPN Service for China - Unblock Everything</title>
+  <meta name="description" content="Experience lightning-fast, military-grade VPN protection designed for China. Unblock Netflix, YouTube, ChatGPT, and more with our premium IEPL servers across 30+ countries.">
+  <meta name="keywords" content="VPN China, unblock China, Netflix China, YouTube China, secure VPN, fast VPN, IEPL VPN, privacy protection">
+  <meta name="author" content="ZeroTheme Premium">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/">
+  <meta property="og:title" content="ZeroTheme Premium | Secure VPN Service">
+  <meta property="og:description" content="Military-grade encryption, 30+ countries, unlimited bandwidth. Experience true internet freedom in China.">
   <meta property="og:image" content="/logo.svg">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="ZeroTheme Premium | Secure VPN Service">
+  <meta property="twitter:description" content="Military-grade encryption, 30+ countries, unlimited bandwidth.">
+  <meta property="twitter:image" content="/logo.svg">
+  
+  <!-- Theme Color for Mobile Browsers -->
+  <meta name="theme-color" content="#6366f1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Preconnect for Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Premium Theme CSS Layer -->
+  <link rel="stylesheet" href="/assets/premium-theme.css">
+  
+  <!-- Premium Theme Switcher Script -->
+  <script>
+    // Theme persistence and auto-detection
+    (function() {
+      const savedTheme = localStorage.getItem('premium-theme') || 'obsidian';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      
+      // System preference detection
+      if (!localStorage.getItem('premium-theme') && window.matchMedia('(prefers-color-scheme: light)').matches) {
+        document.documentElement.setAttribute('data-theme', 'frost');
+      }
+    })();
+  </script>
+  
   <script type="text/javascript">
     window.$crisp = [];
-    window.CRISP_WEBSITE_ID = ""; // 替换为你自己的 Crisp 网站 ID
+    window.CRISP_WEBSITE_ID = ""; // Replace with your Crisp Website ID
     (function() {
         var script = document.createElement("script");
         script.src = "https://client.crisp.chat/l.js";
@@ -19,6 +64,7 @@
         document.body.appendChild(script);
     })();
   </script>
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -32,65 +78,160 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 fbq('init', '1398509151170715');
 fbq('track', 'PageView');
 </script>
-
 <!-- End Meta Pixel Code -->
 
   <style>
+    /* Premium Loading Screen */
     body {
       margin: 0;
+      overflow: hidden;
     }
 
     .loading-page {
+      position: fixed;
+      top: 0;
+      left: 0;
       width: 100vw;
       height: 100vh;
-      background: #181a21;
+      background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+
+    .loading-page.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    /* Animated Background Glow */
+    .loading-page::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 600px;
+      height: 600px;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 60%);
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { 
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.5;
+      }
+      50% { 
+        transform: translate(-50%, -50%) scale(1.2);
+        opacity: 0.8;
+      }
     }
 
     .loading-page .logo-bg {
       position: relative;
+      z-index: 1;
+    }
 
-      &::before {
-        border-radius: 100px;
-        background: conic-gradient(from 180deg at 50.03% 32.23%, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05), #ffffff10, #ffffff40);
-        animation: loading-logo 1s linear infinite;
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-      }
+    .loading-page .logo-bg::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      border-radius: 100px;
+      background: conic-gradient(
+        from 0deg,
+        #6366f1,
+        #8b5cf6,
+        #22d3ee,
+        #10b981,
+        #6366f1
+      );
+      animation: loading-logo 1.5s linear infinite;
+      filter: blur(0px);
     }
 
     .loading-page .logo {
       position: relative;
-      margin: 1px;
-      width: 63px;
-      height: 63px;
+      width: 80px;
+      height: 80px;
       display: flex;
       align-items: center;
-      background: #181a21;
+      background: linear-gradient(135deg, #1a1a2e, #0f0f1a);
       justify-content: center;
       border-radius: 100px;
+      box-shadow: 
+        0 4px 20px rgba(99, 102, 241, 0.3),
+        inset 0 1px 1px rgba(255, 255, 255, 0.1);
     }
 
     .loading-page .logo .logo-icon {
       width: 42px;
       height: 42px;
-      color: rgba(255, 255, 255, 0.05);
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    /* Loading Text */
+    .loading-text {
+      margin-top: 24px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.5px;
+      animation: fade-pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes fade-pulse {
+      0%, 100% { opacity: 0.6; }
+      50% { opacity: 1; }
+    }
+
+    /* Premium Loading Dots */
+    .loading-dots {
+      display: flex;
+      gap: 6px;
+      margin-top: 20px;
+    }
+
+    .loading-dots span {
+      width: 8px;
+      height: 8px;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      border-radius: 50%;
+      animation: dot-bounce 1.4s ease-in-out infinite both;
+    }
+
+    .loading-dots span:nth-child(1) { animation-delay: 0s; }
+    .loading-dots span:nth-child(2) { animation-delay: 0.16s; }
+    .loading-dots span:nth-child(3) { animation-delay: 0.32s; }
+
+    @keyframes dot-bounce {
+      0%, 80%, 100% { 
+        transform: scale(0.6);
+        opacity: 0.5;
+      }
+      40% { 
+        transform: scale(1);
+        opacity: 1;
+      }
     }
 
     @keyframes loading-logo {
-      0% {
-        transform: rotate(0deg);
-      }
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
 
-      100% {
-        transform: rotate(360deg);
-      }
+    /* Hide loading after app loads */
+    .app-loaded .loading-page {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
     }
   </style>
   <script type="module" crossorigin src="/assets/index-af7f3697.js"></script>
@@ -103,20 +244,60 @@ fbq('track', 'PageView');
 
 
 <body>
-  <div class="loading-page">
+  <!-- Premium Loading Screen -->
+  <div class="loading-page" id="loading-screen">
     <div class="logo-bg">
       <div class="logo">
-        <!-- <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          t="1702746075186" class="icon" viewBox="0 0 1024 1024" version="1.1" p-id="18326" width="200" height="200">
-          <path
-            d="M584 352H440c-17.7 0-32 14.3-32 32v544c0 17.7 14.3 32 32 32h144c17.7 0 32-14.3 32-32V384c0-17.7-14.3-32-32-32zM892 64H748c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h144c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zM276 640H132c-17.7 0-32 14.3-32 32v256c0 17.7 14.3 32 32 32h144c17.7 0 32-14.3 32-32V672c0-17.7-14.3-32-32-32z"
-            p-id="18327" fill="#2e5df7" />
-        </svg> -->
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </div>
     </div>
+    <div class="loading-text">Securing your connection...</div>
+    <div class="loading-dots">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
-  <div id="app">
+  
+  <!-- Main Application -->
+  <div id="app"></div>
+  
+  <!-- Theme Switcher Widget -->
+  <div id="theme-switcher" style="position: fixed; bottom: 20px; right: 20px; z-index: 9998; display: none;">
+    <button onclick="switchTheme('obsidian')" title="Obsidian Dark" style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.2); background: linear-gradient(135deg, #6366f1, #8b5cf6); margin: 4px; cursor: pointer;"></button>
+    <button onclick="switchTheme('aurora')" title="Aurora Lights" style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.2); background: linear-gradient(135deg, #06b6d4, #8b5cf6); margin: 4px; cursor: pointer;"></button>
+    <button onclick="switchTheme('frost')" title="Frost Light" style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid rgba(0,0,0,0.1); background: linear-gradient(135deg, #3b82f6, #f8fafc); margin: 4px; cursor: pointer;"></button>
+    <button onclick="switchTheme('ember')" title="Ember Warm" style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.2); background: linear-gradient(135deg, #f59e0b, #ef4444); margin: 4px; cursor: pointer;"></button>
+    <button onclick="switchTheme('ocean')" title="Ocean Deep" style="width: 32px; height: 32px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.2); background: linear-gradient(135deg, #0891b2, #0ea5e9); margin: 4px; cursor: pointer;"></button>
   </div>
+  
+  <script>
+    // Theme Switcher Function
+    function switchTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('premium-theme', theme);
+    }
+    
+    // Show theme switcher on triple-click anywhere
+    document.addEventListener('click', function(e) {
+      if (e.detail === 3) {
+        const switcher = document.getElementById('theme-switcher');
+        switcher.style.display = switcher.style.display === 'none' ? 'flex' : 'none';
+      }
+    });
+    
+    // Hide loading screen when app is ready
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        document.body.classList.add('app-loaded');
+        document.body.style.overflow = 'auto';
+      }, 500);
+    });
+  </script>
   
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="a692c4d4-bd2c-4ab1-be3a-4071a545a766";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 
