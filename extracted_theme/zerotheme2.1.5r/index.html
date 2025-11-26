@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="shortcut icon" type="image/svg+xml" href="/logo.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Netflare - Unlock Your Internet In China !</title>
+  <meta property="og:title" content="Netflare- China's Top Unblocker">
+  <meta property="og:description" content="全独家隧道技术、智能接入点分配、先进的流媒体解锁。获取与全球数百内容供应商互联的网络加速服务高达2000Mbps的单线接入能力。">
+  <meta property="og:image" content="/logo.svg">
+  <script type="text/javascript">
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = ""; // 替换为你自己的 Crisp 网站 ID
+    (function() {
+        var script = document.createElement("script");
+        script.src = "https://client.crisp.chat/l.js";
+        script.async = true;
+        document.body.appendChild(script);
+    })();
+  </script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1398509151170715');
+fbq('track', 'PageView');
+</script>
+
+<!-- End Meta Pixel Code -->
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .loading-page {
+      width: 100vw;
+      height: 100vh;
+      background: #181a21;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .loading-page .logo-bg {
+      position: relative;
+
+      &::before {
+        border-radius: 100px;
+        background: conic-gradient(from 180deg at 50.03% 32.23%, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05), #ffffff10, #ffffff40);
+        animation: loading-logo 1s linear infinite;
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+    .loading-page .logo {
+      position: relative;
+      margin: 1px;
+      width: 63px;
+      height: 63px;
+      display: flex;
+      align-items: center;
+      background: #181a21;
+      justify-content: center;
+      border-radius: 100px;
+    }
+
+    .loading-page .logo .logo-icon {
+      width: 42px;
+      height: 42px;
+      color: rgba(255, 255, 255, 0.05);
+    }
+
+    @keyframes loading-logo {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <script type="module" crossorigin src="/assets/index-af7f3697.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/arco-009ed8bc.js">
+  <link rel="modulepreload" crossorigin href="/assets/vue-26051581.js">
+  <link rel="stylesheet" href="/assets/index-3844956e.css">
+</head>
+
+
+
+
+<body>
+  <div class="loading-page">
+    <div class="logo-bg">
+      <div class="logo">
+        <!-- <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          t="1702746075186" class="icon" viewBox="0 0 1024 1024" version="1.1" p-id="18326" width="200" height="200">
+          <path
+            d="M584 352H440c-17.7 0-32 14.3-32 32v544c0 17.7 14.3 32 32 32h144c17.7 0 32-14.3 32-32V384c0-17.7-14.3-32-32-32zM892 64H748c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h144c17.7 0 32-14.3 32-32V96c0-17.7-14.3-32-32-32zM276 640H132c-17.7 0-32 14.3-32 32v256c0 17.7 14.3 32 32 32h144c17.7 0 32-14.3 32-32V672c0-17.7-14.3-32-32-32z"
+            p-id="18327" fill="#2e5df7" />
+        </svg> -->
+      </div>
+    </div>
+  </div>
+  <div id="app">
+  </div>
+  
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="a692c4d4-bd2c-4ab1-be3a-4071a545a766";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+
+
+<script>
+(function() {
+  var API_URL = '/track-visit';
+
+  function sendVisit() {
+    try {
+      var payload = {
+        url: window.location.href,
+        referrer: document.referrer || null,
+        ua: navigator.userAgent,
+        lang: navigator.language || navigator.userLanguage || null,
+        // Optional for later: can be filled from your HTML if user info is available
+        user_id: window.NETFLARE_USER_ID || null,
+        email: window.NETFLARE_USER_EMAIL || null,
+        plan: window.NETFLARE_USER_PLAN || null
+      };
+
+      if (navigator.sendBeacon) {
+        var blob = new Blob([JSON.stringify(payload)], { type: 'application/json' });
+        navigator.sendBeacon(API_URL, blob);
+      } else {
+        fetch(API_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+          keepalive: true
+        });
+      }
+    } catch (e) {}
+  }
+
+  if (document.readyState === 'complete') {
+    sendVisit();
+  } else {
+    window.addEventListener('load', sendVisit);
+  }
+})();
+</script>
+
+
+</body>
+
+</html>
