@@ -1,0 +1,567 @@
+{
+    "license": "YOUR_LICENSE_KEY_HERE",
+    "api_base": "/api/v1",
+    "land_page": true,
+    "cf_site_key": "",
+    "v2board_version": "xboard",
+    "expired_notice": 5,
+    "traffic_warning_percent": 0.2,
+    "hide_traffic_records": false,
+    "ticket_need_sub": false,
+    "brand_name": "ZeroTheme Premium",
+    "logo_img": "/logo.svg",
+    "crisp_website_id": "",
+    "facebook_pixel_id": "",
+    "locales":[
+        { "label": "English", "value": "en-US" },
+        { "label": "简体中文", "value": "zh-CN" }
+    ],
+    "default_locale": "en-US",
+    "default_theme": "dark",
+    "premium_theme": "obsidian",
+    "available_themes": ["obsidian", "aurora", "frost", "ember", "ocean"],
+    "register_email_white_list":[],
+    "bg_imgs": {
+        "home": "/imgs/bg-premium-1.jpg",
+        "login": "/imgs/bg-premium-2.jpg",
+        "anno_default": "/imgs/bg-premium-3.jpg",
+        "knowledge": "/imgs/bg-premium-3.jpg"
+    },
+    "repeat_popup": false,
+    "carousel": true,
+    "client_download": {
+        "Windows": {
+            "icon": "windows",
+            "color": "#0067b8",
+            "url": "https://clashforwindows.net/files/Clash.for.Windows.Setup.0.20.39.exe",
+            "description": "Full-featured desktop client with advanced options"
+        },
+        "Android": {
+            "icon": "android",
+            "color": "#3cd382",
+            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.13.0-alpha.27/SFA-1.13.0-alpha.27-universal.apk",
+            "description": "Lightweight and battery-efficient"
+        },
+        "iOS": {
+            "icon": "apple",
+            "color": "#181818",
+            "url": "https://apps.apple.com/app/sing-box-vt/id6673731168",
+            "description": "Native iOS experience with one-tap connect"
+        },
+        "MacOS": {
+            "icon": "laptop",
+            "color": "#181818",
+            "url": "https://apps.apple.com/app/sing-box-vt/id6673731168",
+            "description": "Seamless integration with macOS"
+        },
+        "Linux": {
+            "icon": "globe",
+            "color": "#e95420",
+            "url": "https://app.hiddify.com/linux",
+            "description": "CLI and GUI options available"
+        },
+        "Router": {
+            "icon": "gear-wide-connected",
+            "color": "#5a8dee",
+            "url": "/console/knowledge",
+            "description": "Protect all devices at once"
+        }
+    },
+    "home": {
+        "header": [
+            {
+                "text": "Features",
+                "url": "#features"
+            },
+            {
+                "text": "Pricing",
+                "url": "/console/plan"
+            },
+            {
+                "text": "Servers",
+                "url": "#servers"
+            },
+            {
+                "text": "Support",
+                "url": "/console/ticket"
+            }
+        ],
+        "hero": {
+            "tag": "🎉 Limited Time: 30% OFF All Plans",
+            "title": "Reclaim Your Digital Freedom",
+            "subtitle": "Experience True Internet",
+            "content": "Military-grade encryption meets blazing-fast speeds. Access Netflix, YouTube, ChatGPT, and everything else—seamlessly from China with zero compromises on privacy or performance.",
+            "features": [
+                "256-bit AES Encryption",
+                "100+ Premium Servers",
+                "Zero-Log Policy",
+                "24/7 Expert Support"
+            ],
+            "btn": [
+                {
+                    "text": "Start Free Trial",
+                    "url": "/console/plan",
+                    "style": "primary"
+                },
+                {
+                    "text": "View All Features",
+                    "url": "#features",
+                    "style": "secondary"
+                }
+            ],
+            "trust_badges": [
+                {
+                    "icon": "shield-check",
+                    "text": "Military-Grade Encryption"
+                },
+                {
+                    "icon": "speedometer2",
+                    "text": "Up to 2Gbps Speed"
+                },
+                {
+                    "icon": "globe",
+                    "text": "30+ Countries"
+                }
+            ]
+        },
+        "stats": {
+            "title": "Trusted by Thousands Worldwide",
+            "items": [
+                {
+                    "number": "50,000+",
+                    "label": "Happy Users",
+                    "icon": "people-fill"
+                },
+                {
+                    "number": "99.9%",
+                    "label": "Uptime SLA",
+                    "icon": "graph-up-arrow"
+                },
+                {
+                    "number": "100+",
+                    "label": "Premium Servers",
+                    "icon": "server"
+                },
+                {
+                    "number": "<20ms",
+                    "label": "Average Latency",
+                    "icon": "lightning-charge"
+                }
+            ]
+        },
+        "product_list": {
+            "title": "Choose Your Perfect Plan",
+            "content": "Flexible pricing for every need. All plans include access to our premium server network.",
+            "area_list": [
+                { "code": "hk", "text": "Hong Kong", "latency": "12ms" },
+                { "code": "sg", "text": "Singapore", "latency": "28ms" },
+                { "code": "jp", "text": "Japan", "latency": "35ms" },
+                { "code": "us", "text": "United States", "latency": "140ms" },
+                { "code": "gb", "text": "United Kingdom", "latency": "180ms" },
+                { "code": "de", "text": "Germany", "latency": "175ms" },
+                { "code": "kr", "text": "South Korea", "latency": "42ms" },
+                { "code": "au", "text": "Australia", "latency": "95ms" },
+                { "code": "nl", "text": "Netherlands", "latency": "185ms" },
+                { "code": "ca", "text": "Canada", "latency": "155ms" },
+                { "code": "fr", "text": "France", "latency": "178ms" },
+                { "code": "in", "text": "India", "latency": "65ms" },
+                { "code": "tw", "text": "Taiwan", "latency": "25ms" },
+                { "code": "ru", "text": "Russia", "latency": "88ms" },
+                { "code": "tr", "text": "Turkey", "latency": "125ms" }
+            ],
+            "plans": [
+                {
+                    "key": "1",
+                    "plan": "Starter",
+                    "popular": false,
+                    "flow": "150 GB",
+                    "speed": "300 Mbps",
+                    "device": "2 Devices",
+                    "unlocked": "Basic Streaming",
+                    "price": "$4.99",
+                    "period": "/ month",
+                    "features": [
+                        "150 GB Monthly Traffic",
+                        "300 Mbps Max Speed",
+                        "2 Simultaneous Devices",
+                        "Basic Server Access",
+                        "Email Support"
+                    ],
+                    "cta": "Get Started"
+                },
+                {
+                    "key": "2",
+                    "plan": "Professional",
+                    "popular": true,
+                    "badge": "Most Popular",
+                    "flow": "500 GB",
+                    "speed": "1 Gbps",
+                    "device": "5 Devices",
+                    "unlocked": "Full Streaming + Gaming",
+                    "price": "$9.99",
+                    "period": "/ month",
+                    "original_price": "$14.99",
+                    "features": [
+                        "500 GB Monthly Traffic",
+                        "1 Gbps Max Speed",
+                        "5 Simultaneous Devices",
+                        "All IEPL Premium Servers",
+                        "Priority 24/7 Support",
+                        "Netflix, Disney+, HBO Unlock"
+                    ],
+                    "cta": "Choose Professional"
+                },
+                {
+                    "key": "3",
+                    "plan": "Enterprise",
+                    "popular": false,
+                    "flow": "Unlimited",
+                    "speed": "2 Gbps",
+                    "device": "Unlimited",
+                    "unlocked": "Everything Unlocked",
+                    "price": "$19.99",
+                    "period": "/ month",
+                    "features": [
+                        "Unlimited Traffic",
+                        "2 Gbps Max Speed",
+                        "Unlimited Devices",
+                        "Dedicated IEPL Lines",
+                        "VIP Priority Support",
+                        "All Streaming Platforms",
+                        "Gaming Optimization",
+                        "Custom DNS"
+                    ],
+                    "cta": "Go Enterprise"
+                }
+            ],
+            "money_back": {
+                "text": "30-Day Money-Back Guarantee",
+                "description": "Try risk-free. Not satisfied? Get a full refund within 30 days."
+            },
+            "more": {
+                "title": "Need a custom solution for your team or business?",
+                "btn": {
+                    "text": "Contact Sales",
+                    "url": "/console/ticket"
+                }
+            }
+        },
+        "features": {
+            "title": "Why Choose ZeroTheme Premium?",
+            "subtitle": "Built for users who demand the best. Here's what sets us apart.",
+            "items": [
+                {
+                    "icon": "shield-lock",
+                    "title": "Military-Grade Encryption",
+                    "description": "AES-256 encryption protects your data with the same security used by governments and financial institutions worldwide."
+                },
+                {
+                    "icon": "lightning-charge",
+                    "title": "Ultra-Low Latency",
+                    "description": "Our premium IEPL (International Ethernet Private Line) routes ensure minimal latency for gaming, video calls, and streaming."
+                },
+                {
+                    "icon": "eye-slash",
+                    "title": "Strict No-Logs Policy",
+                    "description": "We never track, store, or sell your browsing data. Your privacy is our promise—independently audited and verified."
+                },
+                {
+                    "icon": "globe",
+                    "title": "Global Server Network",
+                    "description": "100+ servers in 30+ countries. Optimized routes for users in China with dedicated streaming and gaming nodes."
+                },
+                {
+                    "icon": "play-circle",
+                    "title": "Stream Everything",
+                    "description": "Unlock Netflix, Disney+, HBO Max, YouTube Premium, Amazon Prime, and more with our specialized streaming servers."
+                },
+                {
+                    "icon": "headset",
+                    "title": "24/7 Expert Support",
+                    "description": "Real humans, not bots. Get instant help via live chat or Telegram any time you need assistance."
+                }
+            ]
+        },
+        "solution": {
+            "title": "Trusted by 50,000+ Users Worldwide",
+            "content": "Enterprise-grade security meets consumer-friendly simplicity. Here's why users choose us.",
+            "card": [
+                {
+                    "icon": "unlock",
+                    "title": "Unblock Everything, Anywhere",
+                    "content": "Access Netflix, YouTube, Amazon Prime, ChatGPT, gaming platforms, and any content blocked in China without restrictions."
+                },
+                {
+                    "icon": "speedometer2",
+                    "title": "Lightning-Fast Connections",
+                    "content": "Experience seamless 4K streaming, lag-free gaming, and instant page loads with our optimized IEPL network infrastructure."
+                },
+                {
+                    "icon": "shield-shaded",
+                    "title": "Bank-Level Security",
+                    "content": "Military-grade AES-256 encryption and strict no-logs policy protect your data—independently audited for your peace of mind."
+                },
+                {
+                    "icon": "chat-dots",
+                    "title": "Human Support, 24/7",
+                    "content": "Real experts available around the clock via Telegram and live chat. Most issues resolved in under 5 minutes."
+                }
+            ]
+        },
+        "testimonials": {
+            "title": "What Our Users Say",
+            "subtitle": "Join thousands of satisfied customers who trust us with their online privacy.",
+            "items": [
+                {
+                    "name": "Michael Chen",
+                    "role": "Software Engineer, Shanghai",
+                    "avatar": "MC",
+                    "rating": 5,
+                    "text": "Finally, a VPN that actually works in China! I've tried at least 10 different services over the years, but this is the only one that's consistently fast and reliable. The IEPL routing makes a huge difference for my work calls.",
+                    "verified": true
+                },
+                {
+                    "name": "Sarah Wang",
+                    "role": "Digital Marketer, Beijing",
+                    "avatar": "SW",
+                    "rating": 5,
+                    "text": "Game-changer for streaming. I can finally watch Netflix and Disney+ without buffering. The customer support team is incredibly responsive—they helped me set up my router in 10 minutes via Telegram.",
+                    "verified": true
+                },
+                {
+                    "name": "David Liu",
+                    "role": "Freelance Designer, Shenzhen",
+                    "avatar": "DL",
+                    "rating": 5,
+                    "text": "As someone who needs to access Google, GitHub, and Figma daily for work, this service is essential. Connection is stable, speeds are great, and I love that I can use it on all my devices.",
+                    "verified": true
+                },
+                {
+                    "name": "Emma Zhang",
+                    "role": "Expat Teacher, Guangzhou",
+                    "avatar": "EZ",
+                    "rating": 5,
+                    "text": "Worth every penny. I can video call my family back home without lag, stream YouTube for lesson planning, and browse freely. The 30-day money-back guarantee gave me confidence to try it.",
+                    "verified": true
+                }
+            ]
+        },
+        "comparison": {
+            "title": "How We Compare",
+            "subtitle": "See why ZeroTheme Premium outperforms the competition.",
+            "features": [
+                { "name": "Speed", "us": "2 Gbps", "competitor1": "500 Mbps", "competitor2": "1 Gbps" },
+                { "name": "China Reliability", "us": "99.9%", "competitor1": "70%", "competitor2": "85%" },
+                { "name": "IEPL Routes", "us": "✓", "competitor1": "✗", "competitor2": "Limited" },
+                { "name": "Streaming Unlock", "us": "All Platforms", "competitor1": "Netflix Only", "competitor2": "Limited" },
+                { "name": "24/7 Support", "us": "✓ Live Chat + Telegram", "competitor1": "Email Only", "competitor2": "Business Hours" },
+                { "name": "No-Logs Audit", "us": "✓ Independent", "competitor1": "✗", "competitor2": "Self-Claimed" }
+            ]
+        },
+        "world_node": {
+            "title": "Global Premium Network",
+            "subtitle": "30+ Countries, 100+ Servers, One Click Away",
+            "content": "Our network spans across the globe with strategically placed servers optimized for speed and reliability. All routes use premium IEPL (International Ethernet Private Line) connections for minimal latency and maximum throughput.",
+            "btn": {
+                "text": "Explore All Locations",
+                "url": "/console/plan"
+            },
+            "node_dot": [
+                { "name": "Los Angeles", "left": "12%", "top": "52%" },
+                { "name": "New York", "left": "22%", "top": "45%" },
+                { "name": "London", "right": "52%", "top": "40%" },
+                { "name": "Frankfurt", "right": "48%", "top": "42%" },
+                { "name": "Paris", "right": "51%", "top": "44%" },
+                { "name": "Tokyo", "right": "14%", "top": "48%" },
+                { "name": "Singapore", "right": "24%", "top": "68%" },
+                { "name": "Hong Kong", "right": "20%", "top": "56%" },
+                { "name": "Sydney", "right": "15%", "top": "80%" },
+                { "name": "Seoul", "right": "17%", "top": "48%" },
+                { "name": "Mumbai", "right": "30%", "top": "60%" },
+                { "name": "Toronto", "left": "20%", "top": "42%" }
+            ]
+        },
+        "faq": {
+            "title": "Frequently Asked Questions",
+            "subtitle": "Got questions? We've got answers.",
+            "items": [
+                {
+                    "question": "Does this VPN work in China?",
+                    "answer": "Yes! Our service is specifically optimized for users in China. We use advanced IEPL (International Ethernet Private Line) routing technology that provides stable, fast connections even during periods of heavy internet censorship."
+                },
+                {
+                    "question": "Can I stream Netflix, YouTube, and other services?",
+                    "answer": "Absolutely. Our servers are optimized for streaming and can unblock Netflix, YouTube, Disney+, HBO Max, Amazon Prime Video, Hulu, and many other platforms. We have dedicated streaming servers for the best experience."
+                },
+                {
+                    "question": "How many devices can I use?",
+                    "answer": "It depends on your plan. Our Starter plan supports 2 devices, Professional supports 5 devices, and Enterprise offers unlimited simultaneous connections. You can also install on your router to protect all devices at once."
+                },
+                {
+                    "question": "Is my data really private?",
+                    "answer": "Yes. We maintain a strict no-logs policy that has been independently audited. We don't track your browsing history, connection timestamps, or any identifiable information. Your privacy is our top priority."
+                },
+                {
+                    "question": "What payment methods do you accept?",
+                    "answer": "We accept major credit cards, PayPal, cryptocurrency (Bitcoin, Ethereum, USDT), and local payment methods including Alipay and WeChat Pay for users in China."
+                },
+                {
+                    "question": "What if I'm not satisfied?",
+                    "answer": "We offer a 30-day money-back guarantee on all plans. If you're not completely satisfied for any reason, contact our support team for a full refund—no questions asked."
+                }
+            ]
+        },
+        "support": {
+            "title": "Trusted Technologies",
+            "partners": ["Cloudflare", "AWS", "Google Cloud", "Stripe", "WireGuard"]
+        },
+        "cta": {
+            "title": "Ready to Experience True Internet Freedom?",
+            "subtitle": "Join 50,000+ users who already enjoy unrestricted, secure, and lightning-fast internet.",
+            "features": ["30-Day Money Back", "Cancel Anytime", "24/7 Support"],
+            "btn": {
+                "text": "Get Started Now — 30% OFF",
+                "url": "/console/plan"
+            }
+        },
+        "more": {
+            "title": "Don't Miss Our Limited-Time Offer",
+            "subtitle": "New users get 30% off their first purchase. Use code: FREEDOM30",
+            "btn": {
+                "text": "Claim Your Discount",
+                "url": "/console/plan"
+            }
+        },
+        "footer": {
+            "sologan_1": "Secure. Fast. Free.",
+            "sologan_2": "Your gateway to the open internet.",
+            "description": "ZeroTheme Premium provides enterprise-grade VPN services designed for users who demand the best in security, speed, and reliability.",
+            "links": {
+                "product": [
+                    { "text": "Pricing", "url": "/console/plan" },
+                    { "text": "Features", "url": "#features" },
+                    { "text": "Server Locations", "url": "#servers" },
+                    { "text": "Download Apps", "url": "/console/knowledge" }
+                ],
+                "support": [
+                    { "text": "Help Center", "url": "/console/knowledge" },
+                    { "text": "Contact Support", "url": "/console/ticket" },
+                    { "text": "Setup Guides", "url": "/console/knowledge" },
+                    { "text": "Status Page", "url": "/console/node" }
+                ],
+                "legal": [
+                    { "text": "Terms of Service", "url": "/tos" },
+                    { "text": "Privacy Policy", "url": "/privacy" },
+                    { "text": "Refund Policy", "url": "/refund" }
+                ]
+            },
+            "contact_btn": {
+                "text": "Join Our Telegram",
+                "url": "https://t.me/zerotheme"
+            },
+            "copyright": "© 2024 ZeroTheme Premium. All rights reserved.",
+            "security_badges": [
+                { "icon": "shield-check", "text": "256-bit SSL" },
+                { "icon": "lock", "text": "No-Logs Verified" },
+                { "icon": "credit-card", "text": "Secure Payments" }
+            ]
+        }
+    },
+    "auth": {
+        "type_text": "Welcome Back!<br>Secure Your Connection"
+    },
+    "login": {
+        "title": "Sign In to Your Account",
+        "sub_title": "Access your secure dashboard and manage your subscription"
+    },
+    "register": {
+        "title": "Create Your Account",
+        "sub_title": "Join thousands of users enjoying internet freedom"
+    },
+    "telegram_modal": "<div style='text-align: center;'><p style='margin-bottom: 12px;'>💬 Get instant support via Telegram</p><a href='https://t.me/zerotheme' target='_blank' style='color: #22d3ee;'>@zerotheme</a></div>",
+    "telegram_group_modal": "<div style='text-align: center;'><p style='margin-bottom: 12px;'>👥 Join our community</p><a href='https://t.me/zerotheme_community' target='_blank' style='color: #22d3ee;'>Telegram Community</a></div>",
+    "node": [
+        { "label": "🇭🇰 Hong Kong", "value": "hk", "latency": "12ms" },
+        { "label": "🇸🇬 Singapore", "value": "sg", "latency": "28ms" },
+        { "label": "🇯🇵 Japan", "value": "jp", "latency": "35ms" },
+        { "label": "🇺🇸 United States", "value": "us", "latency": "140ms" },
+        { "label": "🇬🇧 United Kingdom", "value": "gb", "latency": "180ms" },
+        { "label": "🇰🇷 South Korea", "value": "kr", "latency": "42ms" },
+        { "label": "🇹🇼 Taiwan", "value": "tw", "latency": "25ms" },
+        { "label": "🇦🇺 Australia", "value": "au", "latency": "95ms" },
+        { "label": "🇩🇪 Germany", "value": "de", "latency": "175ms" }
+    ],
+    "plan_lable_color": [
+        { "id": "starter", "color": "#6b7280", "background": "#374151" },
+        { "id": "professional", "color": "#6366f1", "background": "#4f46e5" },
+        { "id": "enterprise", "color": "#fbbf24", "background": "#d97706" }
+    ],
+    "new_user_offer": "FREEDOM30",
+    "new_user": 86400,
+    "design_tokens": {
+        "colors": {
+            "primary": "#6366f1",
+            "primary_light": "#818cf8",
+            "primary_dark": "#4f46e5",
+            "accent": "#22d3ee",
+            "accent_light": "#67e8f9",
+            "success": "#10b981",
+            "warning": "#f59e0b",
+            "error": "#ef4444",
+            "surface": {
+                "dark": {
+                    "primary": "#0f0f1a",
+                    "secondary": "#1a1a2e",
+                    "tertiary": "#16213e"
+                },
+                "light": {
+                    "primary": "#ffffff",
+                    "secondary": "#f8fafc",
+                    "tertiary": "#f1f5f9"
+                }
+            }
+        },
+        "typography": {
+            "font_family": {
+                "display": "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif",
+                "body": "'SF Pro Text', -apple-system, BlinkMacSystemFont, sans-serif",
+                "mono": "'SF Mono', 'Fira Code', monospace"
+            },
+            "font_sizes": {
+                "xs": "0.75rem",
+                "sm": "0.875rem",
+                "base": "1rem",
+                "lg": "1.125rem",
+                "xl": "1.25rem",
+                "2xl": "1.5rem",
+                "3xl": "1.875rem",
+                "4xl": "2.25rem",
+                "5xl": "3rem"
+            }
+        },
+        "spacing": {
+            "xs": "0.25rem",
+            "sm": "0.5rem",
+            "md": "1rem",
+            "lg": "1.5rem",
+            "xl": "2rem",
+            "2xl": "3rem",
+            "3xl": "4rem"
+        },
+        "radius": {
+            "sm": "0.375rem",
+            "md": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "2xl": "1.5rem",
+            "full": "9999px"
+        },
+        "shadows": {
+            "sm": "0 1px 2px rgba(0, 0, 0, 0.05)",
+            "md": "0 4px 6px rgba(0, 0, 0, 0.1)",
+            "lg": "0 10px 15px rgba(0, 0, 0, 0.1)",
+            "xl": "0 20px 25px rgba(0, 0, 0, 0.15)",
+            "glow": "0 0 40px rgba(99, 102, 241, 0.3)"
+        }
+    }
+}

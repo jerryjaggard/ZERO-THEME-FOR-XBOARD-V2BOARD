@@ -1,0 +1,423 @@
+{
+    "license": "eyJhcGkiOiAibmV0ZmxhcmVwcm8uY29tIn0=@TCxJnMEebn5BKRbfbjL1SYKlT+BKKBSiGwGsM8drBVThaocLYyZNS0ESQq/yvaK+sm+T+zhuOLSg4U+sbh4b+Uh7+J72EFnN1MyP8tozxjtR9W7jz/HbBhkv3tuoYu7/dqXre1mCSTevCTkSG4eppafZxKbfa4G23k3j6t19/dEJJC1CcTXFkCS7wI153fWoLKrLO4inAtAiU3aV7dfKaIxZfXhlP/SIvxVG2SJPJwFzHWWlF8jkf2VYkRmGh0NzEA/6Gr4dPyPKyFPvbz3EeFR3eCI30XLU4Q9RfWyHfL9hgQJ9GPii9L+OEtotlDH/tMmYnIKO6YFyFbgE153daw==",
+    "api_base": "https://shop.netflarepro.com/api/v1",
+    "land_page": true,
+    "cf_site_key": "0x4AAAAAACC720ouIg2bpqmh",
+    "v2board_version": "xboard",
+    "expired_notice": 5,
+    "traffic_warning_percent": 0.2,
+    "hide_traffic_records": false,
+    "ticket_need_sub": false,
+    "brand_name": "Netflare",
+    "logo_img": "/logo.svg",
+    "locales":[
+        { "label": "简体中文", "value": "zh-CN" },
+        { "label": "English", "value": "en-US" }
+    ],
+    "default_locale":"en-US",
+    "default_theme":"dark",
+    "register_email_white_list":[
+        
+    ],
+    "bg_imgs":{
+        "home":"/imgs/bg1.jpg",
+        "login":"/imgs/bg2.jpg",
+        "anno_default": "/imgs/bg2.jpg",
+        "knowledge":"/imgs/bg3.jpg"
+    },
+    "repeat_popup": false,
+    "carousel": true,
+    "client_download": {
+        "Windows": {
+            "icon": "windows",
+            "color": "#0067b8",
+            "url": "https://clashforwindows.net/files/Clash.for.Windows.Setup.0.20.39.exe"
+        },
+        "Android":{
+            "icon": "android",
+            "color": "#3cd382",
+            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.13.0-alpha.27/SFA-1.13.0-alpha.27-universal.apk"
+        },
+        "IOS": {
+            "icon": "apple",
+            "color": "#181818",
+            "url": "https://apps.apple.com/app/sing-box-vt/id6673731168"
+        },
+        "MacOS": {
+            "icon": "laptop",
+            "color": "#181818",
+            "url": "https://apps.apple.com/app/sing-box-vt/id6673731168"
+        },
+        "Linux": {
+            "icon": "globe",
+            "color": "#e95420",
+            "url": "https://app.hiddify.com/linux"
+        },
+        "Openwrt": {
+            "icon": "gear-wide-connected",
+            "color": "#5a8dee",
+            "url": "/"
+        }
+    },
+    "home": {
+    "header": [
+        {
+            "text": "Home",
+            "url": "https://www.netflare.co/console"
+        },
+        {
+            "text": "Pricing",
+            "url": "https://www.netflare.co/console/plan"
+        },
+        {
+            "text": "Support",
+            "url": "https://www.netflare.co/console/ticket"
+        }
+    ]
+
+        ,
+        "hero": {
+            
+            "tag": "20% OFF For New Users", 
+            "title": "Designed For China",
+            "content": "Say Goodbye to Slow Speeds – Experience seamless gaming, browsing, and streaming in China with NetFlare Military Grade Privacy",
+            
+            "btn": [
+                {
+                    "text": "Try now",
+                    "url": "/console/plan"
+                }
+            ]
+        },
+        "product_list": {
+            "title": "热门订阅计划",
+            "content": "Our Servers Location",
+            "area_list": [
+                {
+                    "code": "hk",
+                    "text": "香港"
+                },
+                {
+                    "code": "us",
+                    "text": "美国"
+                },
+                {
+                    "code": "sg",
+                    "text": "新加坡"
+                },
+                {
+                    "code": "jp",
+                    "text": "日本"
+                },
+                {
+                    "code": "cn",
+                    "text": "台湾"
+                },
+                {
+                    "code": "gb",
+                    "text": "英国"
+                },
+                {
+                    "code": "kr",
+                    "text": "韩国"
+                },
+                {
+                    "code": "au",
+                    "text": "澳大利亚"
+                },
+                {
+                    "code": "in",
+                    "text": "印度"
+                },
+                {
+                    "code": "pk",
+                    "text": "巴基斯坦"
+                },
+                {
+                    "code": "ae",
+                    "text": "阿联酋"
+                },
+                {
+                    "code": "id",
+                    "text": "印度尼西亚"
+                },
+                {
+                    "code": "ru",
+                    "text": "俄罗斯"
+                },
+                {
+                    "code": "de",
+                    "text": "德国"
+                },
+                {
+                    "code": "ng",
+                    "text": "尼日利亚"
+                },
+                {
+                    "code": "fr",
+                    "text": "法国"
+                },
+                {
+                    "code": "th",
+                    "text": "泰国"
+                },
+                {
+                    "code": "vn",
+                    "text": "越南"
+                },
+                {
+                    "code": "nl",
+                    "text": "荷兰"
+                },
+                {
+                    "code": "ca",
+                    "text": "加拿大"
+                },
+                {
+                    "code": "my",
+                    "text": "马来西亚"
+                },
+                {
+                    "code": "br",
+                    "text": "巴西"
+                }
+            ],
+           
+        
+            "plans": [{
+                "key": "1",
+                "plan": "Gold Lite",
+                "flow": "210GB",
+                "speed": "500Mbps",
+                "device": "3 Devices",
+                "unlocked": "Browsing & streaming",
+                "price": "15¥/ Monthly"
+            }, {
+                "key": "3",
+                "plan": "Gold Premium",
+                "flow": "1024GB",
+                "speed": "2Gbps",
+                "device": "No Limits",
+                "unlocked": "Gaming, Browsing & Streaming",
+                "price": "30¥/ Monthly"
+            }, {
+                "key": "4",
+                "plan": "Permanent Lite",
+                "flow": "300 GB",
+                "speed": "500Mbps",
+                "device": "3 Devices",
+                "unlocked": "Browsing & streaming",
+                "price": "55¥/ Permanent"
+            }, {
+                "key": "7",
+                "plan": "Unlimited Lite",
+                "flow": "Unlimited",
+                "speed": "500Mbps",
+                "device": "1 Device",
+                "unlocked": "Gaming, Browsing & Streaming",
+                "price": "39¥ / Month"
+            }],
+            "more": {
+                "title": "Unlock More Exclusive  Plans: 3-Month, 6-Month, Yearly & More – Secure, Fast, and Flexible!",
+                "btn": {
+                    "text": "Join Now",
+                    "url": "/console/plan"
+                }
+            }
+        },
+        "solution": {
+            "title": "Trusted by 25,000+ Users Nationwide",
+    "content": "We provide highly available and secure network acceleration solutions.",
+    "card": [
+        {
+            "title": "Unblock Everything, Anywhere",
+            "content": "Access Netflix, YouTube, Amazon, ChatGPT, gaming, and even 18+ content in China without restrictions or censorship."
+        },
+        {
+            "title": "Lightning-Fast & Ultra-Low Latency",
+            "content": "Experience seamless streaming, lag-free gaming, and ultra-fast browsing with our optimized global network."
+        },
+        {
+            "title": "Military-Grade Encryption & Privacy",
+            "content": "Protect your data with top-tier encryption and a strict no-logs policy—ensuring total anonymity and security."
+        },
+        {
+            "title": "24/7 Instant Customer Support",
+            "content": "Need help? Get fast responses via Telegram or live chat, with most issues resolved in just minutes."
+        }
+            ]
+        },
+        "world_node": {
+            "title": "Blazing-Fast Servers in 30+ Countries With IEPL",
+            "content": "With 100+ high-speed servers across 30+ countries, we offer ultra-fast and stable connections using premium IEPL (International Ethernet Private Line) routes. These dedicated lines ensure minimal latency, no congestion, and maximum speed, perfect for streaming, gaming, and secure browsing.。",
+            "btn": {
+                "text": "See More",
+                "url": "/console/plan"
+            },
+            "node_dot": [
+    {
+        "name": "美国",
+        "left": "14%",
+        "top": "54%"
+    },
+    {
+        "name": "台湾",
+        "right": "19%",
+        "top": "60%"
+    },
+    {
+        "name": "香港",
+        "right": "20.3%",
+        "top": "60%"
+    },
+    {
+        "name": "法国",
+        "right": "52%",
+        "top": "48%"
+    },
+    {
+        "name": "新加坡",
+        "right": "24%",
+        "top": "68.4%"
+    },
+    {
+        "name": "韩国",
+        "right": "17%",
+        "top": "53%"
+    },
+    {
+        "name": "日本",
+        "right": "13.5%",
+        "top": "54%"
+    },
+    {
+        "name": "德国",
+        "right": "49.5%",
+        "top": "44%"
+    },
+    {
+        "name": "英国",
+        "right": "52.5%",
+        "top": "43%"
+    },
+    {
+        "name": "印度",
+        "right": "29%",
+        "top": "65%"
+    },
+    {
+        "name": "巴基斯坦",
+        "right": "27%",
+        "top": "62%"
+    },
+    {
+        "name": "阿联酋",
+        "right": "33%",
+        "top": "67%"
+    },
+    {
+        "name": "印度尼西亚",
+        "right": "26%",
+        "top": "72%"
+    },
+    {
+        "name": "俄罗斯",
+        "right": "45%",
+        "top": "35%"
+    },
+    {
+        "name": "尼日利亚",
+        "right": "40%",
+        "top": "70%"
+    },
+    {
+        "name": "泰国",
+        "right": "22%",
+        "top": "70%"
+    },
+    {
+        "name": "越南",
+        "right": "21%",
+        "top": "67%"
+    },
+    {
+        "name": "澳大利亚",
+        "right": "18%",
+        "top": "80%"
+    }
+            ]
+        },
+        "support": {
+            "title": "Our Partners"
+        },
+        "more": {
+            "title": "Don't Miss Our New User Limited Discount",
+            "btn": {
+                "text": "Get Discount",
+                "url": "/console"
+            }
+        },
+        "footer": {
+            "sologan_1": "Unblock the World, Surf Without Limits",
+            "sologan_2": "Global network acceleration service provider",
+            "resources": [
+                {
+                    "text": "立即购买",
+                    "url": "/console/plan"
+                }
+            ],
+            "contact_btn": {
+                "text": "Telegram：@netflareco",
+                "url": "https://t.me/netflareco"
+            }
+        }
+    },
+    "auth":{
+        "type_text": "Hello, <br>Thanks for Joining Us !"
+    },
+    "login":{
+        "title": "Sign in to your account",
+        "sub_title": "Surf the Internet with unlimited freedom and high-speed Internet"
+    },
+    "register": {
+        "sub_title": "Write Your Any Mail Address To Receive OTP "
+    },
+    "telegram_modal": "<div>小助手: <a href='https://t.me/netflareco' target='_blank'>https://t.me/netflareco</a></div>",
+    "telegram_group_modal": "<div>小助手: <a href='https://t.me/netflareco' target='_blank'>https://t.me/netflareco</a></div>",
+    "node":  [
+        {
+            "label": "🇭🇰",
+            "value": "hk"
+        },{
+            "label": "🇸🇬",
+            "value": "sg"
+        },{
+            "label": "🇯🇵",
+            "value": "jp"
+        },{
+            "label": "🇺🇸",
+            "value": "us"
+        },{
+            "label": "🇨🇳",
+            "value": "cn"
+        },{
+            "label": "🇬🇧",
+            "value": "gb"
+        },{
+            "label": "🇰🇷",
+            "value": "kr"
+        },{
+            "label": "🇦🇺",
+            "value": "au"
+        }
+    ],
+    "plan_lable_color":[
+        {
+            "id": "mini",
+            "color": "#333",
+            "background": "#555"
+        }
+    ],
+    "new_user_offer": "NEW10OFF",
+    "new_user": 43200
+}
